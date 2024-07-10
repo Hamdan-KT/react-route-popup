@@ -1,9 +1,20 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const About = () => {
+    const location = useLocation();
 	return (
 		<div className="about wrapper">
 			<h1>About Page</h1>
+			<li>
+				<Link
+					className="frontpage-job"
+					to="/modal/2"
+					state={{ previousLocation: location }}
+				>
+					Modal2
+				</Link>
+			</li>
 			<p>
 				Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 				accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab

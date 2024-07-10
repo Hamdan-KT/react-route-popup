@@ -19,7 +19,7 @@ function Modal() {
 	}, []);
 
 	return (
-		<div ref={modalRef} className="modal-wrapper" onClick={() => navigate("/")}>
+		<div ref={modalRef} className="modal-wrapper" onClick={() => navigate(-1)}>
 			<div className="modal">
 				<h1>{id}</h1>
 				<p>
